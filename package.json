@@ -3,13 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "codemirror": "^5.49.2",
     "jest": "^24.9.0",
     "react": "^16.11.0",
     "react-codemirror": "^1.0.0",
+    "react-codemirror2": "^6.0.0",
     "react-dom": "^16.11.0",
     "react-scripts": "3.2.0",
     "react-vega": "^7.1.0",
-    "styled-components": "^4.4.0"
+    "styled-components": "^4.4.0",
+    "vega": "^5.7.3",
+    "vega-lite": "^4.0.0-beta.10"
   },
   "scripts": {
     "start": "react-scripts start",

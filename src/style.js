@@ -15,6 +15,7 @@ const Header = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 16px;
+  border-bottom: 1px solid lightgrey;
 `;
 
 const Body = styled.div`
@@ -26,9 +27,32 @@ const Body = styled.div`
 
 const Left = styled.div`
   flex-basis: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  overflow: auto;
+  
+
+  .ReactCodeMirror { 
+    flex-grow: 2;
+    overflow: scroll;
+    position: relative;
+    
+    .CodeMirror {
+      flex-grow: 3;
+      height: 100%;
+      width: 100%;
+      border: none;
+      position: absolute;
+    }
+  }
+
 `;
+
 const Right = styled.div`
   flex-basis: 50%;
+  border-left: 1px solid lightgrey;
 `;
+
 
 export { Layout, Header, Body, Left, Right };
